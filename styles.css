@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/pngtree-calculator-childrens-day-toy-background-picture-image_1339705.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  footer .container {
+    padding: 0;
+  }
+  
+.card {
+    background-color: #f3f3f3;
+  }
+  
+  .btn-secondary {
+    box-shadow: 1px 1px 5px #d6d6d6;
+  }
+
+  .form-control {
+    font-size: 30px;
+  }
+
+  .btn-secondary:hover {
+    background-color: #e9ecef;
+    color: #212529;
+    box-shadow: 1px 1px 10px #d6d6d6;
+  }
+
+  .calculadora-azul .btn {
+    background-color: #1e6dce; /* Botones verdes */
+    color: #fff; /* Texto blanco */
+  }
+
+  .calculadora-roja .btn {
+    background-color: #d53f3f; /* Botones amarillos */
+    color: #000; /* Texto negro */
+  }
+  
+
+
+.btn-footer {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-footer:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: transparent;
+  }

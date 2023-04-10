@@ -139,11 +139,53 @@ $(document).ready(function() {
   }
   $("#resultado").val(resultado);
 }
-
-// Cambiar color de fondo de la calculadora
-$("#calculadora .btn").click(function() {
-var color = $(this).data("color");
-$("#calculadora").removeClass("bg-default bg-blue bg-green bg-red").addClass("bg-" + color);
 });
 
+function cambiarColor(color) {
+  // Eliminamos todas las clases que empiezan con "bg-" de la calculadora
+  $("#calculadora").removeClass(function (index, className) {
+    return (className.match(/(^|\s)bg-\S+/g) || []).join(" ");
+  });
+  // Agregamos la clase correspondiente al color seleccionado
+  $("#calculadora").addClass(color);
+}
+$(document).ready(function() {
+  // Almacenar el color actual en una variable
+  var currentColor = "bg-default";
+
+  // Eventos de clic para los botones de color
+  $("#btnAzul").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-primary");
+    currentColor = "bg-primary";
+  });
+  
+  $("#btnGris").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-secondary");
+    currentColor = "bg-secondary";
+  });
+  
+  $("#btnRojo").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-danger");
+    currentColor = "bg-danger";
+  });
+
+  $("#btnAmarillo").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-warning");
+    currentColor = "bg-warning";
+  });
+
+  $("#btnVerde").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-success");
+    currentColor = "bg-success";
+  });
+
+  $("#btnTurquesa").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-info");
+    currentColor = "bg-info";
+  });
+
+  $("#btnNegro").click(function() {
+    $("#calculadora").removeClass(currentColor).addClass("bg-dark");
+    currentColor = "bg-dark";
+  });
 });

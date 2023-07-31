@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CALCULADORAJAVASCRIPT_BA463 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CALCULADORAJAVASCRIPTJQUERY }}'
           channelId: live
-          projectId: calculadorajavascript-ba463
+          projectId: calculadorajavascriptjquery

@@ -17,105 +17,103 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light align">
       <ul class="navbar-nav mr-auto">
-        <!-- Botones para cambiar el color de fondo -->
         <li class="nav-item">
-          <button class="nav-link btn btn-primary" id="btnAzul">Azul</button>
+          <button class="nav-link btn btn-primary text-light" id="btnAzul">Azul</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link btn btn-secondary" id="btnGris">Gris</button>
+          <button class="nav-link btn btn-secondary text-light" id="btnGris">Gris</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link btn btn-danger" id="btnRojo">Rojo</button>
+          <button class="nav-link btn btn-danger " id="btnRojo">Rojo</button>
         </li>
         <li class="nav-item">
           <button class="nav-link btn btn-warning" id="btnAmarillo">Amarillo</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link btn btn-success" id="btnVerde">Verde</button>
+          <button class="nav-link btn btn-success text-light" id="btnVerde">Verde</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link btn btn-info" id="btnTurquesa">Turquesa</button>
+          <button class="nav-link btn btn-info text-light" id="btnTurquesa">Turquesa</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link btn btn-dark" id="btnNegro">Negro</button>
+          <button class="nav-link btn btn-dark text-light" id="btnNegro">Negro</button>
         </li>
       </ul>
-      <span class="navbar-text ml-auto"> CALCULADORA BÁSICA </span>
+      <span class="navbar-text ml-auto">CALCULADORA BÁSICA</span>
     </nav>
   </header>
 
   <br /><br /><br /><br />
+
   <div class="container">
     <div class="row justify-content-center mt-5 mb-3">
       <div class="col-md-6 col-lg-4">
         <div class="card calculadora" id="calculadora">
           <div class="card-body">
-            <!-- Resultado de la calculadora -->
             <input type="text" class="form-control mb-2" id="resultado" placeholder="0" readonly />
 
-            <!-- Botones de la calculadora -->
             <div class="row mb-2">
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-ac">AC</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnAC">AC</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-ce">CE</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnCE">CE</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-operacion" id="btnDivision">/</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnDivision">/</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-operacion" id="btnMultiplicacion">*</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnMultiplicacion">*</button>
               </div>
             </div>
             <div class="row mb-2">
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn7">7</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn7">7</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn8">8</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn8">8</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn9">9</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn9">9</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-operacion" id="btnResta">-</button>
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn4">4</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn5">5</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn6">6</button>
-              </div>
-              <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-operacion" id="btnSuma">+</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnResta">-</button>
               </div>
             </div>
             <div class="row mb-2">
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn1">1</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn4">4</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn2">2</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn5">5</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn3">3</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn6">6</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-igual" id="btnIgual">=</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnSuma">+</button>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-3">
+                <button class="btn btn-secondary btn-block btn-lg" id="btn1">1</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-secondary btn-block btn-lg" id="btn2">2</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-secondary btn-block btn-lg" id="btn3">3</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-secondary btn-block btn-lg" id="btnIgual">=</button>
               </div>
             </div>
             <div class="row">
               <div class="col-9">
-                <button class="btn btn-secondary btn-block btn-lg btn-numero" id="btn0">0</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btn0">0</button>
               </div>
               <div class="col-3">
-                <button class="btn btn-secondary btn-block btn-lg btn-punto" id="btnPunto">.</button>
+                <button class="btn btn-secondary btn-block btn-lg" id="btnPunto">.</button>
               </div>
             </div>
           </div>
@@ -124,18 +122,7 @@
     </div>
   </div>
 
-  <footer class="bg-dark text-center text-white">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023  José Alvarado Mazzei
-      <!-- Enlaces a redes sociales -->
-      <a class="btn btn-secondary btn-floating m-1" href="https://www.linkedin.com/in/josealvaradomazzeies/" role="button">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a class="btn btn-secondary btn-floating m-1" href="https://github.com/c0hete" role="button">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </footer>
+ 
 
   <!-- Archivos JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi4+NQ" crossorigin="anonymous"></script>
@@ -143,4 +130,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
+<footer class="bg-dark text-center text-white">
+  © 2023 José Alvarado Mazzei
+  <span></span><a class="btn-secondary  " href="https://www.linkedin.com/in/josealvaradomazzeies/" role="button">
+    <i class="fab fa-linkedin"></i>
+  </a></span>
+  <span><a class="btn-secondary  " href="https://github.com/c0hete" role="button">
+    <i class="fab fa-github"></i>
+  </a></span>
+</footer>
 </html>
